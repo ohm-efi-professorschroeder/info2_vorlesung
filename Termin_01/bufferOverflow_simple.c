@@ -1,3 +1,6 @@
+/*
+Simples Beispiel für den Anfang. Läuft auf den meisten Plattformen.
+*/
 #include <stdio.h>
 #include <string.h>
 

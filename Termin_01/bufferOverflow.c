@@ -1,3 +1,7 @@
+/* 
+Beispiel aus den Vorlesungsfolien. Setzt voraus, dass die Rücksprungadresse hinter den lokalen Variablen auf dem Stack liegt.
+Getestet auf Windows x64.
+*/
 #include <stdio.h>
 #include <string.h>
 
