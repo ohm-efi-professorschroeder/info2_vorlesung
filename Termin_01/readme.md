@@ -41,3 +41,6 @@ run
 
 #### Speicherinhalt des Stacks tabellarisch anzeigen
 `x/40x $sp`
+
+#### Einen 64-Bit (unsigned long) Wert an eine Speicheradresse schreiben
+`set {unsigned long}0x7fffffffffff = 0x0000aaaabbbbcccc`
