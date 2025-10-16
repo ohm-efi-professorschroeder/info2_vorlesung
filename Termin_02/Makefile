@@ -1,7 +1,7 @@
 CFLAGS = -Wall -Wextra -g
 
 eingabetest: eingabeTest.c eingabe.c
-	gcc ${CFLAGS} -o eingabeTest.out eingabe.c anfangsbuchstabe.c
+	gcc ${CFLAGS} -o eingabeTest.out eingabe.c eingabeTest.c
 
 anfangsbuchstabe: anfangsbuchstabe.c eingabe.c
 	gcc ${CFLAGS} -o anfangsbuchstabe.out eingabe.c anfangsbuchstabe.c
