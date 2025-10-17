@@ -16,7 +16,8 @@
 int main()
 {
     char testChar;
-    char eingabeText[MAX_EINGABE_LEN];
+    //char eingabeText[10] = "blablablab";
+    char eingabeText[10];
 
     printf("Zum Testen bitte bei einem Programmdurchlauf weniger und beim naechsten mehr als %d Zeichen eingeben und jeweils mit ENTER bestaetigen.\n", MAX_EINGABE_LEN-1);
 
