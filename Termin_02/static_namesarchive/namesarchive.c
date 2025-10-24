@@ -1,9 +1,20 @@
 // TODO
 #include "namesarchive.h"
+#include <string.h>
+#include <stdio.h>
 
+static char archive[MAX_NAMES][MAX_NAME_LEN];
+static int numNames = 0;
 
 int addName(const char *name)
 {
+    if(numNames < MAX_NAMES)
+    {
+        strncpy(archive[numNames], name, MAX_NAME_LEN);
+        archive[numNames][MAX_NAME_LEN-1] = '\0';
+        numNames++;
+        return 1;
+    }
     return 0;
 }
 
@@ -23,4 +34,6 @@ void sortNames()
 
 void printNames()
 {
+    for(int i = 0; i < numNames; i++)
+        printf("%s\n", archive[i]);
 }

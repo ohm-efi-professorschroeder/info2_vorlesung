@@ -1,7 +1,8 @@
 #ifndef NAMEARCHIVE_H
 #define NAMEARCHIVE_H
 
-#define MAX_NAME_LEN 100
+#define MAX_NAMES 100
+#define MAX_NAME_LEN 10
 
 // Fügt einen Namen hinzu. Im Fehlerfall (kein Speicher mehr) soll 0, ansonsten 1 zurückgegeben werden.
 // Der Name soll in beliebiger Länge gespeichert werden können.

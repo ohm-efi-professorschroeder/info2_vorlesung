@@ -12,7 +12,7 @@ namesarchive_static_lib: main.o libnamesarchive.a
 main.o: main.c
 	gcc -c ${CFLAGS} main.c
 		
-namesarchive.o: namesarchive.c namesarchive.h
+namesarchive.o: namesarchive.c
 	gcc -c ${CFLAGS} namesarchive.c
 		
 # Static Library bauen
