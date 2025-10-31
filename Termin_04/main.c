@@ -80,9 +80,9 @@ void testRemove(const char *name, int age)
 
 Person getPerson(const char *name, int age)
 {
-    Person person;
-    strncpy(person.name, name, MAX_NAME_LEN);
-    person.name[MAX_NAME_LEN-1] = '\0';
-    person.age = age;
-    return person;
+    Person pers;
+    pers.age = age;
+    strncpy(pers.name, name, MAX_NAME_LEN);
+    pers.name[MAX_NAME_LEN-1] = '\0';
+    return pers;
 }
