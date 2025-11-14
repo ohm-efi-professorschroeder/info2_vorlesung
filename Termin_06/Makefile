@@ -4,10 +4,10 @@ stringaddierer: stringaddierer.c eingabe.c
 	gcc ${CFLAGS} -o stringaddierer.out stringaddierer.c eingabe.o
 
 stringsortierung: stringsortierung.c eingabe.c
-	gcc ${CFLAGS} -o stringsortierung.out stringsortierung.c eingabe.c
+	gcc ${CFLAGS} -o stringsortierung.out stringsortierung.c eingabe.o
 
 stringtausch: stringtausch.c eingabe.c
-	gcc ${CFLAGS} -o stringtausch.out stringaddierer.c eingabe.c
+	gcc ${CFLAGS} -o stringtausch.out stringtausch.c eingabe.o
 
 # eingabe.c aus Termin 2
 eingabe.c:
