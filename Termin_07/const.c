@@ -16,8 +16,9 @@
 #define PUFFER_GROESSE 100
 
 
-char *gibTextEin(char *ausgabeText, char *puffer, unsigned int groesse);
-void gibSummeAus(unsigned int zahlen[], unsigned int anzahl);
+char *gibTextEin(const char *ausgabeText, char *puffer, unsigned int groesse);
+void gibSummeAus(const unsigned int zahlen[], unsigned int anzahl);
+unsigned int konvertiereZahlen(const char* eingabe, unsigned int zahlen[], unsigned int anzahl);
 
 int main()
 {
@@ -34,7 +35,7 @@ int main()
     return EXIT_SUCCESS;
 }
 
-char *gibTextEin(char *ausgabeText, char *puffer, unsigned int groesse)
+char *gibTextEin(const char *ausgabeText, char *puffer, unsigned int groesse)
 {
     printf("%s", ausgabeText);
     fgets(puffer, groesse, stdin);
@@ -47,7 +48,7 @@ char *gibTextEin(char *ausgabeText, char *puffer, unsigned int groesse)
     return puffer;
 }
 
-void gibSummeAus(unsigned int zahlen[], unsigned int anzahl)
+void gibSummeAus(const unsigned int zahlen[], unsigned int anzahl)
 {
     int summe = 0;
 
@@ -67,4 +68,31 @@ void gibSummeAus(unsigned int zahlen[], unsigned int anzahl)
         printf(" = %d\n", summe);
     else
         printf("%s", "Keine Werte vorhanden!\n");
+}
+
+unsigned int konvertiereZahlen(const char* eingabe, unsigned int zahlen[], unsigned int anzahl)
+{
+    unsigned int numZahlen = 0;
+
+    char *eingabeCpy = malloc(strlen(eingabe)+1); 
+    if(!eingabeCpy)
+        return 0;
+    strcpy(eingabeCpy, eingabe);
+
+    char* zahlStr = strtok(eingabeCpy, ", ");
+
+    while(zahlStr && numZahlen < anzahl) {
+        // Zahl auslesen
+        char *endPtr;
+        zahlen[numZahlen] = strtol(zahlStr, &endPtr, 10);
+        if(*endPtr != '\0') {
+            free(eingabeCpy);
+            return 0;
+        }
+        numZahlen++;
+        // nächste Zahl holen
+        zahlStr = strtok(NULL, ", ");
+    }
+    free(eingabeCpy);
+    return numZahlen;
 }
