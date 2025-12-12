@@ -46,7 +46,9 @@ int main()
 
     starteUhr();
     // Nutzen Sie später hier die von Ihnen implementierte Funktion für MergeSort bzw. QuickSort.
-    selectionSort(zufallszahlen, ANZAHL);
+    //selectionSort(zufallszahlen, ANZAHL);
+    quickSort(zufallszahlen, ANZAHL);
+    //mergeSort(zufallszahlen, ANZAHL);
 
     printf("Zahlen sortiert nach %lf Sekunden.\n", messeZeitInSek());
 

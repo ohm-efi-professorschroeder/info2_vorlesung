@@ -21,15 +21,24 @@ int gibPositiveZahlEin(const char *text)
     return zahl;
 }
 
+int istPrimzahlRek(unsigned int zahl, unsigned int teiler)
+{
+    if(teiler > zahl/2)
+        return 1;
+    else if(zahl % teiler == 0)
+        return 0;
+    else
+        return istPrimzahlRek(zahl, teiler+1);
+}
+
 int istPrimzahl(unsigned int zahl)
 {
-    for(int i = 2; i < zahl/2; i++)
-    {
-        if(zahl % i == 0)
-            return 0;
-    }
-
-    return 1;
+    // for(int i = 2; i < zahl/2; i++)
+    // {
+    //     if(zahl % i == 0)
+    //         return 0;
+    // }
+    return istPrimzahlRek(zahl, 2);
 }
 
 int main()
