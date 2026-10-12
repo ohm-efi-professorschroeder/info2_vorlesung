@@ -21,6 +21,7 @@ void kopiereString1()
 	char *stringZgr1 = string1;
 	char *stringZgr2 = string2;
 
+	// Pufferüberlauf -> Laufzeitfehler
 	while((*stringZgr2++ = *stringZgr1++) != '\0');
 
 	printf(string1);
@@ -34,6 +35,7 @@ void kopiereString2()
 	char *stringZgr1 = string1;
 	char *stringZgr2 = string2;
 
+	// Kein Fehler
 	while((*stringZgr1++ = *stringZgr2++) != '\0');
 
 	printf(string1);
@@ -45,7 +47,8 @@ void kopiereString3()
 	char string1[] = "123456\n";
 	char string2[] = "789\n";
 
-	while((*string1++ = *string2++) != '\0');
+	// Compilerfehler: Array-Zeiger nicht veränderbar
+	//while((*string1++ = *string2++) != '\0');
 
 	printf(string1);
 	printf(string2);

@@ -20,9 +20,9 @@ int main()
     printf("strlen(string2) = %2d\n", (int)strlen(string2));
     printf("strlen(string3) = %2d\n", (int)strlen(string3));
     printf("\n");
-    printf("sizeof(string1) = %2d\n", (int)sizeof(string1));
-    printf("sizeof(string2) = %2d\n", (int)sizeof(string2));
-    printf("sizeof(string3) = %2d\n", (int)sizeof(string3));
+    printf("sizeof(string1) = %2d\n", (int)sizeof(string1)); // 8
+    printf("sizeof(string2) = %2d\n", (int)sizeof(string2)); // 6
+    printf("sizeof(string3) = %2d\n", (int)sizeof(string3)); // 10
     printf("\n");
     printf("gibLaengenAus(string3):\n");
 
@@ -33,6 +33,6 @@ int main()
 
 void gibLaengenAus(char string[])
 {
-    printf("strlen(string)  = %2d\n", (int)strlen(string));
-    printf("sizeof(string)  = %2d\n", (int)sizeof(string));
+    printf("strlen(string)  = %2d\n", (int)strlen(string)); // 5
+    printf("sizeof(string)  = %2d\n", (int)sizeof(string)); // 10, 8
 }
