@@ -32,14 +32,15 @@ int main()
     printNames();
     printf("\n");
 
-    while((inputName("Namen entfernen: ", buffer, MAX_BUFFER_LEN) != NULL) && (strlen(buffer) > 0))
+/*    while((inputName("Namen entfernen: ", buffer, MAX_BUFFER_LEN) != NULL) && (strlen(buffer) > 0))
     {
         if(removeName(buffer))
             printf("%s wurde aus dem Archiv entfernt.\n", buffer);
         else
             printf("Fehler! %s konnte nicht gefunden werden.\n", buffer);
-    }
+    }*/
 
+    addName("Karl");
     printf("\nNach Entfernen:\n");
     printNames();
     printf("\n");
@@ -52,9 +53,9 @@ int main()
     {
         printf("Fehler beim Speichern des Archivs unter %s.\n", filePath);
     }
-
+    /*
     printf("\nGebe Speicher frei ...\n");
-    clearArchive();
+    clearArchive();*/
 
     printf("Beende Programm ...\n");
 
