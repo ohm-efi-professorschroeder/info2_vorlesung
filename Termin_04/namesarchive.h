@@ -4,13 +4,14 @@
 #define MAX_PERSONS 100
 #define MAX_NAME_LEN 100
 
-typedef struct 
-{
+// TODO Defintion struct person
+typedef struct {
+    int age;
     char name[MAX_NAME_LEN];
-    unsigned short age;
 } Person;
-
+// TODO Definition enum
 typedef enum {SORT_BY_NAME, SORT_BY_AGE} SortType;
+
 
 // Fügt eine Person hinzu.
 int addPerson(const Person newPerson);
