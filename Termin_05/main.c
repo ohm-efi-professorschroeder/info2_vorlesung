@@ -38,13 +38,13 @@ int main()
     printNames();
     printf("\n");
 
-    while((inputName("Namen sortiert hinzufuegen: ", buffer, MAX_BUFFER_LEN) != NULL) && (strlen(buffer) > 0))
-    {
-        if(addNameSorted(buffer))
-            printf("%s wurde dem Archiv hinzugefuegt.\n", buffer);
-        else
-            printf("Fehler! %s konnte nicht hinzugefuegt werden.\n", buffer);
-    }
+    // while((inputName("Namen sortiert hinzufuegen: ", buffer, MAX_BUFFER_LEN) != NULL) && (strlen(buffer) > 0))
+    // {
+    //     if(addNameSorted(buffer))
+    //         printf("%s wurde dem Archiv hinzugefuegt.\n", buffer);
+    //     else
+    //         printf("Fehler! %s konnte nicht hinzugefuegt werden.\n", buffer);
+    // }
 
     printf("\nNach sortierter Eingabe:\n");
     printNames();
