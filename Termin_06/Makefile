@@ -1,17 +1,13 @@
 CFLAGS = -Wall -Wextra -g -I../Termin_02
 
 stringaddierer: stringaddierer.c eingabe.c
-	gcc ${CFLAGS} -o stringaddierer.out stringaddierer.c eingabe.o
+	gcc ${CFLAGS} -o stringaddierer.out stringaddierer.c eingabe.c
 
-stringsortierung: stringsortierung.c eingabe.c
-	gcc ${CFLAGS} -o stringsortierung.out stringsortierung.c eingabe.o
+stringsortierung: stringsortierung.c
+	gcc ${CFLAGS} -o stringsortierung.out stringsortierung.c
 
-stringtausch: stringtausch.c eingabe.c
-	gcc ${CFLAGS} -o stringtausch.out stringtausch.c eingabe.o
-
-# eingabe.c aus Termin 2
-eingabe.c:
-	gcc ${CFLAGS} -c ../Termin_02/eingabe.c
+stringtausch: stringtausch.c
+	gcc ${CFLAGS} -o stringtausch.out stringtausch.c
 
 clean:
 #		del /f *.out *.o *‚.so

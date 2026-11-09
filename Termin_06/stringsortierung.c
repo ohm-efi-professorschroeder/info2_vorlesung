@@ -12,7 +12,22 @@
 #include <stdio.h>
 #include <string.h>
 
-void gibStringsAus(const char *strings[], unsigned int anzahl);
+void gibStringsAus(const char *strings[], int anzahl);
+
+int myCompare(const void* a, const void* b)
+{
+    const char* strA = *((const char**)a);
+    const char* strB = *((const char**)b);
+
+    if(isdigit(strA[0]) && !isdigit(strB[0])) // strA Zahl, strB Name
+        return 1;
+    else if(!isdigit(strA[0]) && isdigit(strB[0])) // strA Name, strB Zahl
+        return -1;
+    else if(isdigit(strA[0]) && isdigit(strB[0])) // beides Zahl
+        return -strcmp(strA, strB);
+    else // beides Name
+        return strcmp(strA, strB);
+}
 
 int main()
 {
@@ -23,6 +38,7 @@ int main()
     gibStringsAus(strings, anzahlStrings);
 
     // TODO: Hier sortieren
+    qsort(strings, anzahlStrings, sizeof(char*), &myCompare);
 
     printf("\nNach Sortierung:\n");
     gibStringsAus(strings, anzahlStrings);
@@ -30,7 +46,7 @@ int main()
     return EXIT_SUCCESS;
 }
 
-void gibStringsAus(const char *strings[], unsigned int anzahl)
+void gibStringsAus(const char *strings[], int anzahl)
 {
     for(int i = 0; i < anzahl; i++)
     {

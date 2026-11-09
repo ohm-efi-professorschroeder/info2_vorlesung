@@ -15,6 +15,7 @@
 #define MAX_STRING_LEN 8
 
 void tauscheStrings(char *zgr1, char *zgr2);
+void tauscheStringsRef(char **zgr1, char **zgr2);
 
 int main()
 {
@@ -28,7 +29,8 @@ int main()
     printf("Inhalt von strings[0]: %s\n", strings[0]);
     printf("Inhalt von strings[1]: %s\n", strings[1]);
 
-    tauscheStrings(string1, string2);
+    //tauscheStrings(string1, string2);
+    tauscheStringsRef(&string1, &string2);
 
     printf("\nNach Tausch:\n");
     printf("Inhalt von string1: %s\n", string1);
@@ -41,7 +43,18 @@ int main()
 
 void tauscheStrings(char *zgr1, char *zgr2)
 {
-    char *tmp = zgr1;
-    zgr1 = zgr2;
-    zgr2 = tmp;
+    // char *tmp = zgr1;
+    // zgr1 = zgr2;
+    // zgr2 = tmp;
+    char tmp[MAX_STRING_LEN];
+    strncpy(tmp, zgr1, MAX_STRING_LEN);
+    strncpy(zgr1, zgr2, MAX_STRING_LEN);
+    strncpy(zgr2, tmp, MAX_STRING_LEN);
+}
+
+void tauscheStringsRef(char **zgr1, char **zgr2)
+{
+    char *tmp = *zgr1;
+    *zgr1 = *zgr2;
+    *zgr2 = tmp;
 }
