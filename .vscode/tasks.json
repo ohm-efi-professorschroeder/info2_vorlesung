@@ -1,0 +1,301 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "make Termin_01 bufferoverflow",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "bufferoverflow"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_01"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_01 bufferoverflow_simple",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "bufferoverflow_simple"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_01"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_01 bufferoverflow_chain",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "bufferoverflow_chain"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_01"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_02 eingabetest",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "eingabetest"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_02"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_02 anfangsbuchstabe",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "anfangsbuchstabe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_02"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_02 fehler",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "fehler"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_02"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_02 laengen",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "laengen"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_02"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_02/static_namesarchive namesarchive_static_lib",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "namesarchive_static_lib"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_02/static_namesarchive"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_03/namesarchive namesarchive_static_lib",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "namesarchive_static_lib"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_03/namesarchive"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_04 namesarchive_static_lib",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "namesarchive_static_lib"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_04"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_05 namesarchive_static_lib",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "namesarchive_static_lib"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_05"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_06 stringaddierer",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "stringaddierer"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_06"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_06 stringsortierung",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "stringsortierung"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_06"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_06 stringtausch",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "stringtausch"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_06"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_07 callByReference",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "callByReference"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_07"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_07 const",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "const"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_07"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_08/queue_namesarchive namesarchive_static_lib",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "namesarchive_static_lib"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_08/queue_namesarchive"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_09/bintree_namesarchive namesarchive_static_lib",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "namesarchive_static_lib"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_09/bintree_namesarchive"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_10 primzahl",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "primzahl"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_10"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make Termin_10/sortierung sortierungsvergleich",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "sortierungsvergleich"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Termin_10/sortierung"
+      },
+      "group": "build",
+      "problemMatcher": "$gcc",
+      "hide": true
+    },
+    {
+      "label": "make all (aktueller Ordner)",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "all"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$gcc"
+    }
+  ]
+}

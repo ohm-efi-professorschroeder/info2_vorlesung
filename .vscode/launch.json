@@ -1,0 +1,587 @@
+// Automatisch erzeugt: je Programm ein Eintrag fuer macOS (CodeLLDB, Extension
+// vadimcn.vscode-lldb) und fuer Windows/Linux (gdb, Extension ms-vscode.cpptools).
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Termin 01: bufferOverflow (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_01/bufferoverflow.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_01",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_01 bufferoverflow"
+    },
+    {
+      "name": "Termin 01: bufferOverflow_simple (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_01/bufferoverflow_simple.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_01",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_01 bufferoverflow_simple"
+    },
+    {
+      "name": "Termin 01: bufferOverflow_chain (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_01/bufferoverflow_chain.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_01",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_01 bufferoverflow_chain"
+    },
+    {
+      "name": "Termin 02: eingabeTest (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/eingabetest.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_02 eingabetest"
+    },
+    {
+      "name": "Termin 02: anfangsbuchstabe (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/anfangsbuchstabe.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_02 anfangsbuchstabe"
+    },
+    {
+      "name": "Termin 02: fehler (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/fehler.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_02 fehler"
+    },
+    {
+      "name": "Termin 02: laengen (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/laengen.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_02 laengen"
+    },
+    {
+      "name": "Termin 02: namesarchive (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/static_namesarchive/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02/static_namesarchive",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_02/static_namesarchive namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 03: namesarchive (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_03/namesarchive/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_03/namesarchive",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_03/namesarchive namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 04: namesarchive (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_04/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_04",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_04 namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 05: namesarchive (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_05/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_05",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_05 namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 06: stringaddierer (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_06/stringaddierer.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_06",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_06 stringaddierer"
+    },
+    {
+      "name": "Termin 06: stringsortierung (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_06/stringsortierung.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_06",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_06 stringsortierung"
+    },
+    {
+      "name": "Termin 06: stringtausch (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_06/stringtausch.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_06",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_06 stringtausch"
+    },
+    {
+      "name": "Termin 07: callByReference (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_07/callByReference.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_07",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_07 callByReference"
+    },
+    {
+      "name": "Termin 07: const (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_07/const.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_07",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_07 const"
+    },
+    {
+      "name": "Termin 08: queue_namesarchive (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_08/queue_namesarchive/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_08/queue_namesarchive",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_08/queue_namesarchive namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 09: bintree_namesarchive (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_09/bintree_namesarchive/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_09/bintree_namesarchive",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_09/bintree_namesarchive namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 10: primzahl (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_10/primzahl.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_10",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_10 primzahl"
+    },
+    {
+      "name": "Termin 10: sortierungsvergleich (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_10/sortierung/sortierungsvergleich.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_10/sortierung",
+      "terminal": "integrated",
+      "preLaunchTask": "make Termin_10/sortierung sortierungsvergleich"
+    },
+    {
+      "name": "Termin 01: bufferOverflow (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_01/bufferoverflow.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_01",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_01 bufferoverflow"
+    },
+    {
+      "name": "Termin 01: bufferOverflow_simple (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_01/bufferoverflow_simple.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_01",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_01 bufferoverflow_simple"
+    },
+    {
+      "name": "Termin 01: bufferOverflow_chain (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_01/bufferoverflow_chain.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_01",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_01 bufferoverflow_chain"
+    },
+    {
+      "name": "Termin 02: eingabeTest (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/eingabetest.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_02 eingabetest"
+    },
+    {
+      "name": "Termin 02: anfangsbuchstabe (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/anfangsbuchstabe.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_02 anfangsbuchstabe"
+    },
+    {
+      "name": "Termin 02: fehler (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/fehler.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_02 fehler"
+    },
+    {
+      "name": "Termin 02: laengen (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/laengen.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_02 laengen"
+    },
+    {
+      "name": "Termin 02: namesarchive (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_02/static_namesarchive/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_02/static_namesarchive",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_02/static_namesarchive namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 03: namesarchive (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_03/namesarchive/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_03/namesarchive",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_03/namesarchive namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 04: namesarchive (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_04/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_04",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_04 namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 05: namesarchive (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_05/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_05",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_05 namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 06: stringaddierer (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_06/stringaddierer.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_06",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_06 stringaddierer"
+    },
+    {
+      "name": "Termin 06: stringsortierung (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_06/stringsortierung.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_06",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_06 stringsortierung"
+    },
+    {
+      "name": "Termin 06: stringtausch (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_06/stringtausch.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_06",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_06 stringtausch"
+    },
+    {
+      "name": "Termin 07: callByReference (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_07/callByReference.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_07",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_07 callByReference"
+    },
+    {
+      "name": "Termin 07: const (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_07/const.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_07",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_07 const"
+    },
+    {
+      "name": "Termin 08: queue_namesarchive (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_08/queue_namesarchive/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_08/queue_namesarchive",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_08/queue_namesarchive namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 09: bintree_namesarchive (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_09/bintree_namesarchive/namesarchive_static_lib.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_09/bintree_namesarchive",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_09/bintree_namesarchive namesarchive_static_lib"
+    },
+    {
+      "name": "Termin 10: primzahl (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_10/primzahl.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_10",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_10 primzahl"
+    },
+    {
+      "name": "Termin 10: sortierungsvergleich (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Termin_10/sortierung/sortierungsvergleich.out",
+      "args": [],
+      "cwd": "${workspaceFolder}/Termin_10/sortierung",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Pretty-Printing aktivieren",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make Termin_10/sortierung sortierungsvergleich"
+    }
+  ]
+}

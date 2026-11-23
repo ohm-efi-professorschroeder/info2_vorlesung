@@ -20,3 +20,23 @@ Alternativ befindet sich im Wurzelverzeichnis ein s.g. `Makefile`, welches Regel
 > make bufferOverflow
 
 Hinweis: Dies setzt die Installation des Programms **Make** voraus. Diese ist meistens beim Compiler mit dabei, falls Sie jedoch Fehlermeldungen bekommen ("Make could not be found" o.ä.), versuchen Sie, Make manuell zu installieren. 
+
+## Debuggen
+
+### Kommandozeile
+
+Jedes Makefile bietet zu jedem Programm ein Ziel `debug-<Programmname>`, welches das Programm baut und im Debugger
+startet (`lldb` auf macOS, sonst `gdb`), z.B. im Ordner `Termin_07`:
+
+> make debug-const
+
+Mit `make all` werden alle Programme eines Ordners gebaut. Die erzeugten Programme heißen immer `<Programmname>.out`.
+
+### VSCode
+
+Im Ordner `.vscode` liegen fertige Debug-Konfigurationen. Wählen Sie in der Ansicht *Ausführen und Debuggen* das
+gewünschte Programm aus und starten Sie mit `F5`. Das Programm wird vorher automatisch per `make` gebaut.
+
+- **macOS:** Einträge mit *(macOS)*, benötigt die Extension *CodeLLDB* (`vadimcn.vscode-lldb`)
+- **Windows/Linux:** Einträge mit *(gdb)*, benötigt die Extension *C/C++* (`ms-vscode.cpptools`) und einen
+  installierten `gdb` (unter Windows z.B. über MinGW/MSYS2)
