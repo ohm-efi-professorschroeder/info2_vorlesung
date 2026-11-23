@@ -1,19 +1,22 @@
-CFLAGS = -Wall -Wextra -g -I../Termin_02
+CFLAGS = -Wall -Wextra -g -O0 -I../Termin_02
 
-stringaddierer: stringaddierer.c eingabe.c
-	gcc ${CFLAGS} -o stringaddierer.out stringaddierer.c eingabe.o
+.PHONY: all clean stringaddierer stringsortierung stringtausch
 
-stringsortierung: stringsortierung.c eingabe.c
-	gcc ${CFLAGS} -o stringsortierung.out stringsortierung.c eingabe.o
-
-stringtausch: stringtausch.c eingabe.c
-	gcc ${CFLAGS} -o stringtausch.out stringtausch.c eingabe.o
+all: stringaddierer stringsortierung stringtausch
 
 # eingabe.c aus Termin 2
-eingabe.c:
-	gcc ${CFLAGS} -c ../Termin_02/eingabe.c
+stringaddierer: stringaddierer.c ../Termin_02/eingabe.c
+	gcc ${CFLAGS} -o $@.out stringaddierer.c ../Termin_02/eingabe.c
+
+stringsortierung: stringsortierung.c
+	gcc ${CFLAGS} -o $@.out stringsortierung.c
+
+stringtausch: stringtausch.c
+	gcc ${CFLAGS} -o $@.out stringtausch.c
 
 clean:
-#		del /f *.out *.o *‚.so
+#		del /f *.out *.o *.so *.a
 # Comment line above and uncomment line below for UNIX systems
-	rm -f *.out *.o *.so
+	rm -rf *.out *.o *.so *.a *.dSYM
+
+include ../debug.mk

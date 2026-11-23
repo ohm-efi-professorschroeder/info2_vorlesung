@@ -1,18 +1,24 @@
-CFLAGS = -Wall -Wextra -g
+CFLAGS = -Wall -Wextra -g -O0
+
+.PHONY: all clean eingabetest anfangsbuchstabe fehler laengen
+
+all: eingabetest anfangsbuchstabe fehler laengen
 
 eingabetest: eingabeTest.c eingabe.c
-	gcc ${CFLAGS} -o eingabeTest.out eingabe.c eingabeTest.c
+	gcc ${CFLAGS} -o $@.out eingabe.c eingabeTest.c
 
 anfangsbuchstabe: anfangsbuchstabe.c eingabe.c
-	gcc ${CFLAGS} -o anfangsbuchstabe.out eingabe.c anfangsbuchstabe.c
+	gcc ${CFLAGS} -o $@.out eingabe.c anfangsbuchstabe.c
 
 fehler: fehler.c
-	gcc -w -g -o fehler.out fehler.c
+	gcc -w -g -O0 -o $@.out fehler.c
 
 laengen: laengen.c
-	gcc -w -g -o laengen.out laengen.c
+	gcc -w -g -O0 -o $@.out laengen.c
 
 clean:
-#		del /f *.out *.o *‚.so
+#		del /f *.out *.o *.so *.a
 # Comment line above and uncomment line below for UNIX systems
-	rm -f *.out *.o *.so
+	rm -rf *.out *.o *.so *.a *.dSYM
+
+include ../debug.mk
