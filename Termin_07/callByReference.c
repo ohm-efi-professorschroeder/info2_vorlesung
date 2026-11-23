@@ -45,6 +45,13 @@ int main()
     return EXIT_SUCCESS;
 }
 
+// typedef struct
+// {
+//     char text1[MAX_TEXT_LEN];
+//     char *text2;
+//     int number;
+// } MyStruct;
+
 void modify1(MyStruct arg)
 {
     strncpy(arg.text1, "Neuer Text 1", MAX_TEXT_LEN);
